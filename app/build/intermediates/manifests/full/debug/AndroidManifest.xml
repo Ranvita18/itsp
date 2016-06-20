@@ -37,17 +37,14 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name="com.example.dell.itspproject.second_page" />
-        <activity android:name="com.example.dell.itspproject.third" />
-        <activity android:name="com.example.dell.itspproject.fourth" >
-            <intent-filter>
-                <action android:name="com.example.dell.itspproject.fourth" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
         <activity android:name="com.example.dell.itspproject.alarm" />
-        <activity android:name="com.example.dell.itspproject.x" />
+
+        <receiver android:name="com.example.dell.itspproject.Alarm_Receiver" />
+
+        <service
+            android:name="com.example.dell.itspproject.RingtonePlayingService"
+            android:enabled="true" >
+        </service>
     </application>
 
 </manifest>

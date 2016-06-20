@@ -60,7 +60,7 @@ public class MainActivity extends Activity {
         b4 = (Button) findViewById(R.id.button4);
 
         BA = BluetoothAdapter.getDefaultAdapter();
-        lv = (ListView) findViewById(button);
+        lv = (ListView) findViewById(listView);
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
@@ -122,7 +122,7 @@ public class MainActivity extends Activity {
     {
         if(v.getId() == R.id.button6)
         {
-            Intent i = new Intent(MainActivity.this, second_page.class);
+
             startActivity(i);
         }
     }*/

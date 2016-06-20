@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:2:1-47:12
+ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:2:1-42:12
 	package
 		ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:3:5-43
 		INJECTED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml
@@ -34,7 +34,7 @@ ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidM
 	android:name
 		ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:11:22-69
 application
-ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:13:5-45:19
+ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:13:5-40:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
@@ -86,36 +86,20 @@ MERGED from [com.google.android.gms:play-services-basement:8.1.0] C:\Users\DELL\
 		ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:32:13-66
 	android:name
 		ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:31:13-58
-activity#com.example.dell.itspproject.second_page
-ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:34:9-49
-	android:name
-		ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:34:19-46
-activity#com.example.dell.itspproject.third
-ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:35:9-43
-	android:name
-		ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:35:19-40
-activity#com.example.dell.itspproject.fourth
-ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:36:9-42:20
-	android:name
-		ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:36:19-41
-intent-filter#android.intent.category.DEFAULT+com.example.dell.itspproject.fourth
-ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:37:13-41:29
-action#com.example.dell.itspproject.fourth
-ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:38:17-78
-	android:name
-		ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:38:25-75
-category#android.intent.category.DEFAULT
-ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:40:17-76
-	android:name
-		ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:40:27-73
 activity#com.example.dell.itspproject.alarm
-ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:43:9-43
+ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:34:9-43
 	android:name
-		ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:43:19-40
-activity#com.example.dell.itspproject.x
-ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:44:9-48
+		ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:34:19-40
+receiver#com.example.dell.itspproject.Alarm_Receiver
+ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:35:9-52
 	android:name
-		ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:44:19-36
+		ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:35:19-49
+service#com.example.dell.itspproject.RingtonePlayingService
+ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:36:9-39:19
+	android:enabled
+		ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:37:13-35
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml:36:18-56
 uses-sdk
 INJECTED from C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\DELL\AndroidStudioProjects\ITSPproject\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
