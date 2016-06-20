@@ -67,20 +67,42 @@ public class alarm extends Activity {
             @Override
             public void onClick(View v) {
 
+
                 // setting calendar instance with the hour and minute that we picked
                 // on the time picker
-               // calendar.set(Calendar.HOUR_OF_DAY, alarm_timepicker.getHour());
-                //calendar.set(Calendar.MINUTE, alarm_timepicker.getMinute());
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M){
+                    calendar.set(Calendar.HOUR_OF_DAY, alarm_timepicker.getHour());
+                    calendar.set(Calendar.MINUTE, alarm_timepicker.getMinute());
+
+                }
+                else{
+                    calendar.set(Calendar.HOUR_OF_DAY, alarm_timepicker.getCurrentHour());
+                    calendar.set(Calendar.MINUTE, alarm_timepicker.getCurrentMinute());
+                }
+
 
                 // get the int values of the hour and minute
-                int hour = alarm_timepicker.getHour();
-                int minute = alarm_timepicker.getMinute();
+                int hour;
+                int minute;
 
                 // convert the int values to strings
-                String hour_string = String.valueOf(hour);
-                String minute_string = String.valueOf(minute);
+
 
                 // convert 24-hour time to 12-hour time
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+                    hour = alarm_timepicker.getHour();
+                }
+                else {
+                    hour=alarm_timepicker.getCurrentHour();
+                }
+                if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    minute = alarm_timepicker.getMinute();
+                }
+                else {
+                    minute=alarm_timepicker.getCurrentMinute();
+                }
+                String hour_string = String.valueOf(hour);
+                String minute_string = String.valueOf(minute);
                 if (hour > 12) {
                     hour_string = String.valueOf(hour - 12);
                 }
